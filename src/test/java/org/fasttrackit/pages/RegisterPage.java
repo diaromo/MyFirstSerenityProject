@@ -6,46 +6,16 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class RegisterPage extends PageObject {
 
-    @FindBy(id = "firstname")
-    private WebElementFacade firstNameField;
+    @FindBy(id = "reg_email")
+    private WebElementFacade registrationEmailField;
 
-    @FindBy(id = "middlename")
-    private WebElementFacade midNameField;
+    @FindBy(id = "reg_password")
+    private WebElementFacade passwordEmailField;
 
-    @FindBy(name = "lastname")
-    private WebElementFacade lastNameField;
-
-    @FindBy(id = "email_address")
-    private WebElementFacade emailAddressField;
-
-    @FindBy(id = "password")
-    private WebElementFacade registerPasswordField;
-
-    @FindBy(id = "confirmation")
-    private WebElementFacade confirmationField;
-
-    @FindBy(css = ".button[title=Register]")
+    @FindBy(css = "button[name='register']")
     private WebElementFacade registerButton;
 
-    public void setFirstNameField(String firstName){
-        typeInto(firstNameField, firstName);
-    }
-    public void setMidNameField(String MidName){
-        typeInto(midNameField, MidName);
-    }
-    public void setLastNameField(String LastName) {
-        typeInto(lastNameField,LastName);
-    }
-    public void setEmailAddressField(String emailAddress) {
-        typeInto(emailAddressField,emailAddress);
-    }
-    public void setRegisterPasswordField(String registerPassword){
-        typeInto(registerPasswordField, registerPassword);
-    }
-    public void setConfirmationField(String confirmationPassword){
-        typeInto(confirmationField, confirmationPassword);
-    }
-    public void clickRegisterButton(){
-        clickOn(registerButton);
-    }
+    public void setRegistrationEmailField(String email){typeInto(registrationEmailField, email); }
+    public void setRegistrationPasswordField(String password){typeInto(passwordEmailField, password);}
+    public void clickRegisterButton(){ clickOn(registerButton);}
 }

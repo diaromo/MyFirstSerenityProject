@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="org.fasttrackit.features.search.RegisterTest" skipped="0" tests="1" time="16.32" timestamp="2021-02-03 09:15:57"><testcase classname="org.fasttrackit.features.search.RegisterTest" name="Valid credentials register test"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="org.fasttrackit.features.search.RegisterTest" skipped="0" tests="1" time="16.09" timestamp="2021-02-15 07:47:55"><testcase classname="org.fasttrackit.features.search.RegisterTest" name="Valid credentials register test"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+org.fasttrackit.pages.HomePage.clickAccountLink(HomePage.java:25)&#13;
+org.fasttrackit.steps.serenity.RegisterSteps.navigateToRegister(RegisterSteps.java:16)&#13;
+org.fasttrackit.features.search.RegisterTest.validCredentialsRegisterTest(RegisterTest.java:23)&#13;
+</system-err></testcase></testsuite>

@@ -13,33 +13,13 @@ public class RegisterSteps {
     @Step
     public void navigateToRegister(){
         homePage.open();
-        homePage.clickAccountLink();
-        homePage.clickRegisterLink();
+        homePage.clickAccountLink();}
 
-    }
     @Step
-    public void setFirstName(String firstName){
-        registerPage.setFirstNameField(firstName);
-    }
+    public void setRegistrationEmail(String firstName){registerPage.setRegistrationEmailField(firstName); }
     @Step
-    public void setMidName(String MidName){
-        registerPage.setMidNameField(MidName);
-    }
-    @Step
-    public void setLastName(String lastName){
-        registerPage.setLastNameField(lastName);
-    }
-    @Step
-    public void setEmail(String email){
-        registerPage.setEmailAddressField(email);
-    }
-    @Step
-    public void setPassword(String password){
-        registerPage.setRegisterPasswordField(password);
-    }
-    @Step
-    public void setConfirmationP(String confirmationP){
-        registerPage.setConfirmationField(confirmationP);
+    public void setRegistrationPassword(String password){
+        registerPage.setRegistrationPasswordField(password);
     }
     @Step
     public void clickRegisterButton() {

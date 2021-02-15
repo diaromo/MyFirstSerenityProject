@@ -6,10 +6,10 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class RegisterConfirmationPage extends PageObject {
 
-    @FindBy(css = ".success-msg span")
+    @FindBy(css = "p:nth-child(1)")
     private WebElementFacade registerConfirmationMsg;
 
     public void verifyRegisterMessage() {
-        registerConfirmationMsg.shouldContainText("Thank you for registering with Madison Island.");
+        registerConfirmationMsg.shouldContainText("Hello romosandiana (not romosandiana? Log out)");
     }
 }

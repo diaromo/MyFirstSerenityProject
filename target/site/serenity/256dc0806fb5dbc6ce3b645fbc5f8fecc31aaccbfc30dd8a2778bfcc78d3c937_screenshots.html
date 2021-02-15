@@ -160,7 +160,7 @@
             <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-02-2021 21:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-02-2021 19:47</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Valid credentials register test
+                                <span class="failing-color">Valid credentials register test
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,16 +214,55 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>org.fasttrackit.pages.HomePage.clickAccountLink(HomePage.java:25)<br />org.fasttrackit.steps.serenity.RegisterSteps.navigateToRegister(RegisterSteps.java:16)<br />org.fasttrackit.features.search.RegisterTest.validCredentialsRegisterTest(RegisterTest.java:23)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for HomePage.accountLink to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>org.fasttrackit.pages.HomePage.clickAccountLink(HomePage.java :25)<br />org.fasttrackit.steps.serenity.RegisterSteps.navigateToRegister(RegisterSteps.java :16)<br />org.fasttrackit.features.search.RegisterTest.validCredentialsRegisterTest(RegisterTest.java :23)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6854013766727096212.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="9a6dcf99bc98fc797680d0fee06bab0e9d8a1dd08c79bcea5e857029098083b6.png" title=" Navigate to register" width="929"/>
-                <img src="401690d92de932c028016edd3966e60b6574dd31cb5d06b5fd7073877c879558.png" title=" Set first name: Maria" width="929"/>
-                <img src="d19852a89ce6e4f65667deb4c5231352158cfd36c33c27d06e7d7c99e4c9b2cc.png" title=" Set mid name: Ioana" width="929"/>
-                <img src="cb36352dde333f314eb4635416ef8376704f07c681aa13fd4572ed5d4d2c6db1.png" title=" Set last name: Campioana" width="929"/>
-                <img src="d9c19ee7ae01f70f505ccfd8977c6b38b5baa3cad1d87cfe4ca827d3454ca5e8.png" title=" Set email: MariaIoana2@campioana.com" width="929"/>
-                <img src="80af99f4cd86a4246d9defaa5634e5f2b20da52fba3b1b2365bc6858d404f6f0.png" title=" Set password: 12345b" width="929"/>
-                <img src="5f91bffb1d03f9422fd1a217d78a8980d23a3b66979dd35519a3c49d18658ca7.png" title=" Set confirmation p: 12345b" width="929"/>
-                <img src="b9efcb8bf0740037215a74d07ba5b696aaf9f24e7ade073f1451cc7fbe3f7532.png" title=" Click register button: <span class='success-color'>SUCCESS</span>" width="929"/>
+                <img src="01279cb470a69d966d6621b28f21d17ec689ed6be916e31a6051c0ebc40e7fab.png" title=" Navigate to register: <span class='failing-color'>FAILURE</span>" width="929"/>
             </div>
         </div>
 

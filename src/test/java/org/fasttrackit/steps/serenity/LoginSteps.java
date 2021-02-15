@@ -5,7 +5,7 @@ import org.fasttrackit.pages.AccountPage;
 import org.fasttrackit.pages.HomePage;
 import org.fasttrackit.pages.LoginPage;
 
-public class LoginSteps {
+/*public class LoginSteps {
     private HomePage homePage;
     private LoginPage loginPage;
     private AccountPage accountPage;
@@ -14,22 +14,19 @@ public class LoginSteps {
     public void navigateToLogin(){
         homePage.open();
         homePage.clickAccountLink();
-        homePage.clickLoginLink();
-    }
+        homePage.clickLoginLink(); }
     @Step
     public void setEmail(String email){
-        loginPage.setEmailField(email);
-    }
+        loginPage.setEmailField(email);}
     @Step
     public void setPassword(String password){
-        loginPage.setPasswordField(password);
-    }
+        loginPage.setPasswordField(password); }
     @Step
     public void clickLoginButton(){
-        loginPage.clickLoginButton();
-    }
+        loginPage.clickLoginButton();}
     @Step
     public void login(String username, String password){
+        navigateToLogin();
         setEmail(username);
         setPassword(password);
         clickLoginButton();
@@ -39,4 +36,4 @@ public class LoginSteps {
         accountPage.verifyHelloMessage(userName);
     }
 
-}
+}*/
